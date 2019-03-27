@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: peewee
+      POSTGRES_PASSWORD: peewee
+      POSTGRES_DB: peewee
+    ports:
+      - "5432:5432"
